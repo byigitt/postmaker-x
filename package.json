@@ -1,0 +1,24 @@
+{
+  "name": "postmaker-x",
+  "private": true,
+  "scripts": {
+    "dev": "pnpm run --parallel dev",
+    "dev:api": "pnpm --filter @postmaker/api dev",
+    "dev:web": "pnpm --filter @postmaker/web dev",
+    "build": "pnpm run --parallel build",
+    "build:shared": "pnpm --filter @postmaker/shared build",
+    "tc": "pnpm run --parallel typecheck",
+    "tc:web": "pnpm --filter @postmaker/web typecheck",
+    "tc:api": "pnpm --filter @postmaker/api typecheck",
+    "lint": "pnpm run --parallel lint",
+    "db:push": "pnpm --filter @postmaker/api db:push",
+    "db:studio": "pnpm --filter @postmaker/api db:studio"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.3"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=9.0.0"
+  }
+}
